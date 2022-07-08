@@ -1,0 +1,15 @@
+create table multe.auto(id serial primary key not null,
+        targa varchar(7) unique not null,
+        marca varchar(20) not null,
+        modello varchar(20) not null)
+;
+create table multe.infrazione(id serial primary key not null,
+        data date not null, 
+        tipo varchar(80) not null,
+        importo numeric(5,2) not null,
+        id_auto int not null)
+;
+alter table multe.infrazione add constraint fk_infrazione_auto 
+	foreign key (id_auto)
+	references multe.auto(id)
+;
