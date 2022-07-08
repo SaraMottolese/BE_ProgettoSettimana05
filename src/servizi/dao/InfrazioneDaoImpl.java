@@ -11,7 +11,7 @@ import dati.Auto;
 import dati.Infrazione;
 import servizi.ConnectionFactory;
 
-public class InfrazioneDaoImpl implements IndrazioneDao {
+public class InfrazioneDaoImpl implements InfrazioneDao {
 	private static final String DELETE_INFRAZIONE = "delete from infrazione where id=";
 	private static final String STAMPA_INFRAZIONE = "select a.targa, a.marca, a.modello,"
 			+ " i.tipo, i.id_auto, i.importo, i.data"

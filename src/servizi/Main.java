@@ -9,14 +9,14 @@ import dati.Auto;
 import dati.Infrazione;
 import servizi.dao.AutoDao;
 import servizi.dao.AutoDaoImpl;
-import servizi.dao.IndrazioneDao;
+import servizi.dao.InfrazioneDao;
 import servizi.dao.InfrazioneDaoImpl;
 
 public class Main {
 
 	public static void main(String[] args) {
 		AutoDao ad1 = new AutoDaoImpl();
-		IndrazioneDao id1 = new InfrazioneDaoImpl();
+		InfrazioneDao id1 = new InfrazioneDaoImpl();
 
 		Scanner scanner = new Scanner(System.in);
 		while (true) {
